@@ -1,0 +1,19 @@
+{
+	"name": "koa-realip",
+	"version": "1.0.0",
+	"description": "获取真实 IP 地址",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/inlym/koa-realip.git"
+	},
+	"author": "inlym",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/inlym/koa-realip/issues"
+	},
+	"homepage": "https://github.com/inlym/koa-realip#readme"
+}
