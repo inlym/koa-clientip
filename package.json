@@ -1,5 +1,5 @@
 {
-	"name": "koa-realip",
+	"name": "koa-clientip",
 	"version": "1.0.0",
 	"description": "用于 Koa 框架中获取真实客户端 IP 地址(适用于使用了 API 网关、反向代理或负载均衡等场景)",
 	"main": "index.js",
@@ -8,12 +8,12 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/inlym/koa-realip.git"
+		"url": "git+https://github.com/inlym/koa-clientip.git"
 	},
 	"author": "inlym",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/inlym/koa-realip/issues"
+		"url": "https://github.com/inlym/koa-clientip/issues"
 	},
-	"homepage": "https://github.com/inlym/koa-realip#readme"
+	"homepage": "https://github.com/inlym/koa-clientip#readme"
 }
