@@ -1,5 +1,3 @@
-# koa-clientip README
-
 # koa-clientip
 
 用于 Koa 框架中获取真实客户端 IP 地址(适用于使用了 API 网关、反向代理或负载均衡等场景)
@@ -22,7 +20,7 @@
 const Koa = require('koa')
 const app = new Koa()
 app.use(ctx=>{
-	console.log(ctx.ip)
+    console.log(ctx.ip)
 })
 ...
 ```
@@ -54,10 +52,10 @@ proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 ```javascript
 const Koa = require('koa')
 const app = new Koa({
-	proxy:true,    // 表明存在代理转发
+    proxy:true,    // 表明存在代理转发
 })
 app.use(ctx=>{
-	console.log(ctx.ip)
+    console.log(ctx.ip)
 })
 ...
 ```
@@ -72,13 +70,13 @@ app.use(ctx=>{
 const Koa = require('koa')
 const clientip = require('koa-clientip')
 const app = new Koa({
-	proxy:true,    // 表明存在代理转发
+    proxy:true,    // 表明存在代理转发
 })
 app.use(clientip({
-	index: -2,    // 表明倒数第2个是真实客户端 IP
+    index: -2,    // 表明倒数第2个是真实客户端 IP
 }))
 app.use(ctx=>{
-	console.log(ctx.ip)    // IP 会直接赋值到 Koa 框架对应的 IP 值中，直接获取使用即可
+    console.log(ctx.ip)    // IP 会直接赋值到 Koa 框架对应的 IP 值中，直接获取使用即可
 })
 ...
 ```
@@ -87,9 +85,9 @@ app.use(ctx=>{
 
 ```javascript
 app.use(
-	clientip({
-		index: -2,
-		disabled: true,
-	})
+    clientip({
+        index: -2,
+        disabled: true,
+    })
 )
 ```
